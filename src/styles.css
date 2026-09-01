@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply m-0 bg-sand font-sans antialiased; }
+  * { @apply box-border; }
+  :focus-visible { @apply outline-2 outline-offset-4 outline-moss; }
+  section { scroll-margin-top: 5rem; }
+}
+
+@layer components {
+  .nav-link { @apply text-sm font-medium text-muted transition-colors hover:text-ink; }
+  .button-primary { @apply inline-flex items-center gap-2 bg-ink px-5 py-3 text-sm font-semibold text-sand transition-transform transition-colors hover:-translate-y-0.5 hover:bg-moss; }
+  .button-secondary { @apply inline-flex items-center gap-2 border border-line px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-ink hover:bg-white/70; }
+  .social-link { @apply inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-moss; }
+  .project-link { @apply inline-flex items-center gap-2 border border-[#52645a] px-3 py-2 text-sm font-semibold text-sand transition-colors hover:border-[#a7c3a9] hover:text-[#a7c3a9]; }
+  .project-list .group { border-color: rgb(255 255 255 / 0.18); }
+  .project-list h3, .project-list li { color: #f7f6f1; }
+  .project-list p { color: #b7c1ba; }
+  .project-list > article > p { color: #a7c3a9; }
+}
