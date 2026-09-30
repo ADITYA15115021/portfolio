@@ -34,12 +34,35 @@ export const portfolio = {
     { category: 'Databases and DevOps', items: ['PostgreSQL, Git, Github Actions, Docker'] }
   ],
   projects: [
-    { name: 'Agricultural Crop Price Analytics & Forecasting', description: 'Built a data-driven application for analyzing and forecasting agricultural crop prices across Indian markets. The system processes historical price data to identify trends, seasonality, and market-level variations, and exposes the analysis and forecasting functionality through a FastAPI backend.', technologies: ['[Python]', '[FastAPI]', '[Pandas]', '[React]', '[PostgreSQL]', '[Scikit-learn]'], githubUrl: 'https://github.com/ADITYA15115021/crop_price', liveUrl: 'https://crop-price-theta.vercel.app/' },
-    { name: 'Anonymous Feedback Platform', description: 'Built a full-stack anonymous feedback platform that allows users to create shareable feedback pages and receive anonymous responses. The system provides authenticated page management, feedback acceptance controls, JWT-based authentication, and persistent storage through a PostgreSQL database.', technologies: ['[Python]', '[FastAPI]', '[React]', '[PostgreSQL]', '[SQLAlchemy]'], githubUrl: 'https://github.com/ADITYA15115021/anonfeedback', liveUrl: 'https://anonfeedback-khaki.vercel.app/' }
+
+  {
+    name: 'Custom Fertilizer Sector Stock Index',
+    description: 'Built a custom fertilizer-sector stock index that is not available as an existing market index. The system selects fertilizer companies and calculates index weights using free-float market capitalization, with real-time market data sourced from the NSE. Implemented divisor-based index calculation, automated market-data collection, and periodic index updates through a FastAPI backend.',
+    technologies: ['[Python]', '[FastAPI]', '[React]', '[PostgreSQL]','[AWS]'],
+    githubUrl: 'https://github.com/ADITYA15115021/stock-index',
+    liveUrl: 'https://stock-index-inky.vercel.app/'
+  },
+
+  { 
+      name: 'Agricultural Crop Price Analytics & Forecasting', 
+      description: 'Built a data-driven application for analyzing and forecasting agricultural crop prices across Indian markets. The system processes historical price data to identify trends, seasonality, and market-level variations, and exposes the analysis and forecasting functionality through a FastAPI backend.', technologies: ['[Python]', '[FastAPI]', '[Pandas]', '[React]', '[PostgreSQL]', '[Scikit-learn]'], 
+      githubUrl: 'https://github.com/ADITYA15115021/crop_price', 
+      liveUrl: 'https://crop-price-theta.vercel.app/' 
+    },
+
+    { 
+      name: 'Anonymous Feedback Platform', 
+      description: 'Built a full-stack anonymous feedback platform that allows users to create shareable feedback pages and receive anonymous responses. The system provides authenticated page management, feedback acceptance controls, JWT-based authentication, and persistent storage through a PostgreSQL database.', technologies: ['[Python]', '[FastAPI]', '[React]', '[PostgreSQL]', '[SQLAlchemy]'], 
+      githubUrl: 'https://github.com/ADITYA15115021/anonfeedback', 
+      liveUrl: 'https://anonfeedback-khaki.vercel.app/' 
+    }
+
   ] as Project[],
+
   education: [
     { degree: 'BTECH CSE', institution: 'VIT VELLORE', period: 'SEPT 2022 — AUG 2026' }
   ] as Education[]
+
 } as const
 
 export const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(portfolio.email)}`
