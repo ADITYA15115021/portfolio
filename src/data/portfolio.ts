@@ -22,7 +22,7 @@ export const portfolio = {
   email: 'adityakamboj1511@gmail.com',
   githubUrl: 'https://github.com/ADITYA15115021',
   linkedinUrl: 'https://www.linkedin.com/in/adityakamboj1511',
-  resumeUrl: 'https://drive.google.com/file/d/1ZuKRjkMc577XPeAmb0ZsnpRgRCggl8bN/view?usp=drive_link',
+  resumeUrl: 'https://drive.google.com/file/d/1j5kIid4zKMkVu1IeXd-wLAfNMPkgWXOo/view?usp=sharing',
   about: [
     'I’m a software engineer interested in building reliable software and understanding the systems behind it. My work spans backend development, data analysis, and machine learning, with a particular interest in turning raw data and real-world problems into practical applications.',
     'I enjoy working across the stack—from designing APIs and working with databases to building data pipelines, analyzing patterns, and developing predictive models. I care about writing code that is clean, maintainable, and purposeful rather than simply making something work.'
